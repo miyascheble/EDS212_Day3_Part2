@@ -393,10 +393,48 @@ class(marmots)</code></pre>
 class(pika)</code></pre>
 <pre><code>## [1] &quot;numeric&quot;</code></pre>
 <pre class="r"><code># Scalar multiplier
-
 scalar_pika &lt;- 5.2 * pika
 scalar_pika</code></pre>
 <pre><code>## [1] 64.48 35.36 27.56 21.84 45.76 44.20</code></pre>
+<pre class="r"><code>bananas &lt;- c(1, 2, 3)
+apples &lt;- c(6, 7, 8)
+class(bananas)</code></pre>
+<pre><code>## [1] &quot;numeric&quot;</code></pre>
+<pre class="r"><code>class(apples)</code></pre>
+<pre><code>## [1] &quot;numeric&quot;</code></pre>
+<pre class="r"><code>bananas + apples</code></pre>
+<pre><code>## [1]  7  9 11</code></pre>
+<pre class="r"><code>bananas - apples</code></pre>
+<pre><code>## [1] -5 -5 -5</code></pre>
+<pre class="r"><code># dot product
+bananas %*% apples</code></pre>
+<pre><code>##      [,1]
+## [1,]   44</code></pre>
+<pre class="r"><code>my_values &lt;- seq(from = 1, to = 10)
+
+# If you dont include by or length, it will assume that you want the sequence to increase in increments of 1</code></pre>
+<pre class="r"><code>my_matrix &lt;- matrix(data = my_values, nrow = 2, ncol = 5, byrow = TRUE)
+my_matrix</code></pre>
+<pre><code>##      [,1] [,2] [,3] [,4] [,5]
+## [1,]    1    2    3    4    5
+## [2,]    6    7    8    9   10</code></pre>
+<pre class="r"><code>5 * my_matrix</code></pre>
+<pre><code>##      [,1] [,2] [,3] [,4] [,5]
+## [1,]    5   10   15   20   25
+## [2,]   30   35   40   45   50</code></pre>
+<pre class="r"><code>class(my_matrix)</code></pre>
+<pre><code>## [1] &quot;matrix&quot; &quot;array&quot;</code></pre>
+<pre class="r"><code>glimpse(penguins)</code></pre>
+<pre><code>## Rows: 344
+## Columns: 8
+## $ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…
+## $ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…
+## $ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …
+## $ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …
+## $ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…
+## $ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …
+## $ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…
+## $ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…</code></pre>
 </div>
 </div>
 

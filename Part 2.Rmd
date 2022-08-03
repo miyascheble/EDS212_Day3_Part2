@@ -53,3 +53,27 @@ bananas - apples
 # dot product
 bananas %*% apples
 ```
+
+```{r}
+
+my_values <- seq(from = 1, to = 10)
+
+# If you dont include by or length, it will assume that you want the sequence to increase in increments of 1
+```
+
+```{r}
+my_matrix <- matrix(data = my_values, nrow = 2, ncol = 5, byrow = TRUE)
+my_matrix
+
+5 * my_matrix
+class(my_matrix)
+```
+
+```{r}
+glimpse(penguins)
+```
+
+```{r}
+
+```
+
