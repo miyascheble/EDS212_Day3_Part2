@@ -6,6 +6,8 @@ date: "2022-08-03"
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(palmerpenguins)
 ```
 
 ```{r}
@@ -17,4 +19,37 @@ squirrel_meals <- data.frame(food, meal, food_mass_g)
 squirrel_meals
 ```
 
+## Creating & working with vectors
 
+### Make some vectors
+
+```{r}
+marmots <- c("blue", "green", 4, "yellow")
+
+# Check class
+class(marmots)
+```
+
+```{r}
+pika <- c(12.4, 6.8, 5.3, 4.2, 8.8, 8.5)
+
+#Check class
+class(pika)
+
+# Scalar multiplier
+scalar_pika <- 5.2 * pika
+scalar_pika
+```
+
+```{r}
+bananas <- c(1, 2, 3)
+apples <- c(6, 7, 8)
+class(bananas)
+class(apples)
+
+bananas + apples
+bananas - apples
+
+# dot product
+bananas %*% apples
+```
