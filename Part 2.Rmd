@@ -1,0 +1,20 @@
+---
+title: "EDS212_Day3_Part2"
+output: html_document
+date: "2022-08-03"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+food <- c("banana", "apple", "carrot")
+meal <- c("breakfast", "snack", "lunch")
+food_mass_g <- c(14.8, 19.2, 11.5)
+
+squirrel_meals <- data.frame(food, meal, food_mass_g)
+squirrel_meals
+```
+
+
