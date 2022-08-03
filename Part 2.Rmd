@@ -73,7 +73,6 @@ class(my_matrix)
 glimpse(penguins)
 ```
 
-```{r}
+## Some cool text
 
-```
 
